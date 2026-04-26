@@ -5,7 +5,7 @@ import time
 #  CONFIGURACIÓN DE LA PÁGINA
 # ============================================================
 st.set_page_config(
-    page_title="Una Sorpresa Para Ti 💌",
+    page_title="Feliz cumpleaños, amor mío",
     page_icon="💖",
     layout="centered",
 )
@@ -14,10 +14,10 @@ st.set_page_config(
 #  CÓDIGOS DE DESBLOQUEO  ← EDITA AQUÍ TUS CONTRASEÑAS
 # ============================================================
 CODIGOS = {
-    1: "siempre",      # Respuesta del paso 1
-    2: "13",           # Respuesta del paso 2  (ej: fecha del primer beso)
-    3: "luna",         # Respuesta del paso 3
-    4: "contigo",      # Respuesta del paso 4
+    1: "Aprender a amar",      # Respuesta del paso 1
+    2: "28sep",           # Respuesta del paso 2  (ej: fecha del primer beso)
+    3: "La negra tomasa",         # Respuesta del paso 3
+    4: "Guatape",      # Respuesta del paso 4
 }
 
 # ============================================================
@@ -231,9 +231,9 @@ def pantalla_inicio():
     st.markdown("""
     <div class="carta pista">
         Hola, mi amor...<br><br>
-        He escondido algo especial para ti al final de este camino.
+        He preparado esta búsqueda del tesoro para ti.
         Cada pista te llevará un paso más cerca de mí,
-        de nosotros, de algo que llevas tiempo esperando. 🌹<br><br>
+        de tu regalo y de algo que llevas tiempo esperando. 🌹<br><br>
         ¿Estás listo para descubrirlo?
     </div>
     """, unsafe_allow_html=True)
@@ -260,11 +260,10 @@ def paso_1():
     # ── EDITA AQUÍ el mensaje del paso 1 ──
     st.markdown("""
     <div class="carta pista">
-        🌸 Dicen que el amor verdadero no grita, <em>susurra</em>.<br><br>
-        Y así es como yo te quiero a ti, en silencio pero con todo.<br><br>
+        Mi amor por ti empezó sin darme cuenta, sin avisar<br><br>
         Mi primer regalo para ti fue una sola palabra que prometí repetirte
         todos los días de mi vida...<br><br>
-        <strong>¿Cuál fue esa palabra?</strong> 🌷
+        <strong>Busca las cerezas</strong> 🌷
     </div>
     """, unsafe_allow_html=True)
 
@@ -272,7 +271,7 @@ def paso_1():
 
     # ── Pista adicional (opcional) ──
     with st.expander("¿Necesitas una pista? 🤫"):
-        st.markdown("*Fue lo primero que te dije cuando te pregunté si querías ser mío/a...*")  # EDITA AQUÍ
+        st.markdown("La has tocado para mí")  # EDITA AQUÍ
 
     respuesta = st.text_input("Escribe tu respuesta aquí:", key="input_1", placeholder="tu respuesta...")
 
@@ -287,7 +286,7 @@ def paso_1():
                 st.session_state.error = True
 
     if st.session_state.error:
-        st.markdown('<div class="error-msg">Casi, mi amor... pero no es esa 💕 Inténtalo de nuevo.</div>',
+        st.markdown('<div class="error-msg"> En serio no te acuerdas???? Inténtalo de nuevo.</div>',
                     unsafe_allow_html=True)
 
 
@@ -309,14 +308,14 @@ def paso_2():
         tus labios rozaron los míos por primera vez.<br><br>
         El mundo se detuvo, y yo solo quería que ese momento
         durara para siempre. ❤️<br><br>
-        <strong>¿Qué día del mes fue nuestro primer beso?</strong>
+        <strong>¿Quieres un dulcecito?</strong>
     </div>
     """, unsafe_allow_html=True)
 
     separador()
 
     with st.expander("¿Necesitas una pista? 🤫"):
-        st.markdown("*Era un número entre el 10 y el 15...*")  # EDITA AQUÍ
+        st.markdown("**")  # EDITA AQUÍ
 
     respuesta = st.text_input("Escribe tu respuesta aquí:", key="input_2", placeholder="número del día...")
 
