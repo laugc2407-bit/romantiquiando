@@ -5,7 +5,7 @@ import time
 #  CONFIGURACIÓN DE LA PÁGINA
 # ============================================================
 st.set_page_config(
-    page_title="Feliz cumpleaños, amor mío",
+    page_title="Tu regalo",
     page_icon="💖",
     layout="centered",
 )
@@ -221,7 +221,7 @@ def pantalla_inicio():
     carta_inicio("""
     <p style="text-align:center; font-size:3.5rem; margin-bottom:0.3rem;">💌</p>
     <h1 style="text-align:center; font-size:2rem; color:#8b2252; font-family:'Playfair Display',serif;">
-        Feliz compleaños<br><em>amor de mi vida</em>
+        Feliz cumpleaños<br><em>amor de mi vida</em>
     </h1>
     """)
 
