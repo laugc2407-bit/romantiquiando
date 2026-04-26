@@ -221,7 +221,7 @@ def pantalla_inicio():
     carta_inicio("""
     <p style="text-align:center; font-size:3.5rem; margin-bottom:0.3rem;">💌</p>
     <h1 style="text-align:center; font-size:2rem; color:#8b2252; font-family:'Playfair Display',serif;">
-        Una pequeña aventura<br><em>solo para ti</em>
+        Feliz compleaños<br><em>amor de mi vida</em>
     </h1>
     """)
 
